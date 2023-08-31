@@ -1,0 +1,1047 @@
+<resources>
+    <string name="app_name">KarmaHealth</string>
+    <string name="freshchat_file_provider_authority">com.devkraft.karmahealth.provider</string>
+    <string name="praveshkre">प्रवेश करें</string>
+    <string name="karm">कर्मा प्राइमरी हेल्थ केयर पहचान</string>
+    <string name="loginandsignup">लॉगिन करें</string>
+    <string name="signupor">साइन अप करें</string>
+    <string name="resentotp">ओटीपी पुनः भेजें</string>
+    <string name="jari">जारी रखें</string>
+    <string name="signup">साइन अप करें</string>
+    <string name="signin">साइन इन करें</string>
+    <string name="jarirkhkr">जारी रखकर, आप हमारी नीतियों से सहमत हैं!</string>
+    <string name="sewa">सेवाओं की शर्ते</string>
+    <string name="gopniye">गोपनीयता नीति</string>
+    <string name="enterten">कृपया 10 अंकों का मोबाइल नंबर लिखें।</string>
+    <string name="entertene">कृपया कर्मा नंम्बर लिखें।</string>
+    <string name="entertenzero">कृपया मोबाइल नंबर कि शुरूआत 0 से ना करे।</string>
+    <string name="otpcheck">OTP Verification</string>
+    <string name="hmne">हमने OTP +91 </string>
+    <string name="fmno">, इस नम्बर पर भेज दिया है!</string>
+
+    <string name="doyougetcode">क्या आपको कोई कोड प्राप्त नहीं हुआ?</string>
+    <string name="newcodesend">नया कोड फिर से भेजें।</string>
+    <string name="mobileno">मोबाइल नंबर डालें।</string>
+
+
+    <string name="karmaid">कर्मा पहचान संख्या लिखें </string>
+
+
+    <string name="username">नमस्ते, </string>
+
+    <string name="userdate">आज, 30 अगस्त </string>
+
+    <string name="mymedicin">मेरी दवाएँ </string>
+    <string name="mycheckup">नेक्स्ट फॉलो अप</string>
+
+    <string name="timetotake">आप की दवाएँ लेने का समय </string>
+    <string name="addnewmedinice">+ नई दवा जोडें </string>
+
+
+    <string name="morning">सुबह </string>
+    <string name="afternoon">दोपहर </string>
+    <string name="night">रात </string>
+    <string name="evening">शाम </string>
+
+
+    <string name="naste">(भोजन से पहले)</string>
+    <string name="bhojan">(भोजन के बाद)</string>
+    <string name="khans">(खाने के बाद)</string>
+
+
+    <string name="onepill">1 गोली </string>
+
+    <string name="morningnine">सुबह के 9 बजे </string>
+    <string name="aterone">दोपहर के 01:00 बजे </string>
+    <string name="nightnine">रात के 9 बजे </string>
+
+
+    <string name="uploaddoctor">उपलब्ध डॉक्टर्स </string>
+    <string name="uploaddoctorthistime">इस समय डॉक्टर उपलब्ध हैं </string>
+
+
+    <string name="mytracck">मेरे ट्रैकर्स </string>
+    <string name="importanttrack">आपके महत्वपूर्ण ट्रैक रेकार्ड </string>
+
+
+    <string name="drkiperchi">डॉक्टर प्रिस्क्रिप्शन्स</string>
+    <string name="agarappdekvs">अगर आप देखना चाहते हैं तो यहां देख सकते हैं </string>
+
+    <string name="search">खोज</string>
+
+
+    <string name="genraldr">सामान्य चिकित्सक</string>
+    <string name="twontiplus">लगभग 20+ डॉक्टर अभी उपलब्ध हैं</string>
+
+    <string name="nosedr">कान-नाक-गला विशेषज्ञ</string>
+    <string name="harddr">हर्दय रोग विशेषज्ञ</string>
+    <string name="jathardr">जठर रोग विशेषज्ञ</string>
+    <string name="heardr">बाल विशेषज्ञ</string>
+    <string name="seckendr">त्वचा विशेषज्ञ</string>
+
+
+    <string name="racktdr">रक्त-दाब</string>
+    <string name="shwasnidar">श्र्वसन दर</string>
+    <string name="hearddar">ह्रदय दर</string>
+    <string name="rackt">रक्त शर्करा</string>
+    <string name="report">रिपोर्ट</string>
+
+
+    <string name="startingdate">प्रारंभ तारीख</string>
+    <string name="enddate">अंतिम तारीख</string>
+
+
+    <string name="date">दिनांक</string>
+    <string name="time">समय</string>
+
+    <string name="sistolik">सिस्टोलिक (मिमी एचजी)</string>
+    <string name="daybatig">डायस्टोलिक (मिमी एचजी)</string>
+
+    <string name="save">जमा करें</string>
+
+
+    <string name="drug_name">दवा का नाम</string>
+
+    <string name="search_hint">दवा का नाम दर्ज करें</string>
+    <string name="start_date">आरंभ करने की तारीख</string>
+    <string name="end_date">अंतिम तारीख</string>
+
+
+    <string name="standard_schedule">मानक अनुसूची</string>
+
+
+    <string name="looking_for_more_flexible_set_up">अधिक लचीले सेट अप की तलाश है? </string>
+
+    <string name="try_custom_schedule"> स्मार्ट शेड्यूल आज़माएं</string>
+
+
+    <string name="tablet">टैबलेट</string>
+    <string name="injection">इंजेक्शन</string>
+    <string name="liquid">सिरप</string>
+    <string name="other">अन्य</string>
+    <string name="frequency">आवृत्ति</string>
+
+    <string-array name="frequency_adapter" translatable="false">
+        <item>चुनना</item>
+        <item>रोज</item>
+        <item>साप्ताहिक</item>
+        <item>महीने के</item>
+
+    </string-array>
+    <string name="dosage">मात्रा बनाने की विधि</string>
+    <string name="dosagetype">दवाई लेने का तरीका</string>
+
+
+    <string name="prescribed_dosage_hint"> <font size="15">जैसे 100 मिलीग्राम, 30 मिली, 2 गोलियाँ</font></string>
+
+
+    <string name="dont_see_dosage">अपनी खुराक नहीं देख पा रहे हैं?</string>
+
+    <string name="pick_your_time">अपना समय चुनें</string>
+    <string name="prescribed_dosage">निर्धारित खुराक</string>
+
+    <string name="prescribed_dosage_physician">कृपया अपने चिकित्सक द्वारा निर्धारित खुराक दर्ज करें</string>
+
+    <string name="no_end_date">कोई अंतिम तिथि नहीं</string>
+
+
+    <string name="doses_per_day">खुराक प्रति दिन</string>
+    <string name="dosage_name_is_required">खुराक का नाम आवश्यक है</string>
+    <string name="edit_dependent">आश्रित संपादित करें</string>
+
+    <string name="clear_label">साफ़</string>
+    <string name="dosage_summary">खुराक सारांश</string>
+
+    <string name="save_label">संचय</string>
+
+    <string name="remove">हटाना</string>
+    <string name="cant_find_your_drug" translatable="false">आप जिस दवा की तलाश कर रहे हैं वह नहीं मिल रही है? &#160;<font color="#4abc93">Click Here</font></string>
+
+
+    <string name="add_custom_dosage">स्मार्ट शेड्यूल जोड़ें</string>
+    <string name="back_to_standard_dosage">मानक अनुसूची पर वापस जाएं</string>
+    <string name="route_label">रास्ता</string>
+
+
+    <string-array name="route_adapter" translatable="false">
+        <item>चुनना</item>
+        <item>गोली</item>
+        <item>इंजेक्शन</item>
+        <item>तरल</item>
+        <item>अन्य</item>
+    </string-array>
+
+
+    <string name="select_days">दिन चुनें</string>
+    <string name="dosage_label">मात्रा बनाने की विधि</string>
+
+    <string name="set_time">निर्धारित समय</string>
+
+    <string-array name="hours_of_day_adapter" translatable="false">
+        <item>Select</item>
+        <item>12:00 am</item>
+        <item>01:00 am</item>
+        <item>02:00 am</item>
+        <item>03:00 am</item>
+        <item>04:00 am</item>
+        <item>05:00 am</item>
+        <item>06:00 am</item>
+        <item>07:00 am</item>
+        <item>08:00 am</item>
+        <item>09:00 am</item>
+        <item>10:00 am</item>
+        <item>11:00 am</item>
+        <item>12:00 pm</item>
+        <item>01:00 pm</item>
+        <item>02:00 pm</item>
+        <item>03:00 pm</item>
+        <item>04:00 pm</item>
+        <item>05:00 pm</item>
+        <item>06:00 pm</item>
+        <item>07:00 pm</item>
+        <item>08:00 pm</item>
+        <item>09:00 pm</item>
+        <item>10:00 pm</item>
+        <item>11:00 pm</item>
+    </string-array>
+
+    <string-array name="days_of_week_adapter" translatable="false">
+        <item>रविवार</item>
+        <item>सोमवार</item>
+        <item>मंगलवार</item>
+        <item>बुधवार</item>
+        <item>गुरुवार</item>
+        <item>शुक्रवार</item>
+        <item>शनिवार</item>
+    </string-array>
+    <string name="refill_reminder">रिफिल रिमाइंडर</string>
+
+
+    <string name="no_result_found">कोई परिणाम नहीं मिला</string>
+    <string name="space">&#160;</string>
+    <string name="you_can_not_add_more_than_dosage">आप इससे अधिक नहीं जोड़ सकते</string>
+    <string name="dosages">खुराक</string>
+    <string name="days">दिन</string>
+
+    <string name="drug_daily" translatable="false">रोज</string>
+    <string name="drug_weekly" translatable="false">साप्ताहिक</string>
+    <string name="drug_monthly" translatable="false">महीने के</string>
+    <string name="add_drug">दवा जोड़ें</string>
+    <string name="choose_from_standard_dosage">मानक खुराक में से चुनें</string>
+
+
+    <string name="cant_find_drug">आपकी दवा नहीं मिल रही है?</string>
+    <string name="cant_find_drug_line">हम अपने प्लेटफॉर्म पर और दवाएं जोड़ने के लिए लगातार काम कर रहे हैं।</string>
+    <string name="cant_find_drug_line1">कृपया उस दवा को निर्दिष्ट करें जिसे आप प्रबंधित करना चाहते हैं और हम कोशिश करेंगे और उसे मंच पर जोड़ देंगे और आपसे संपर्क करेंगे।</string>
+
+
+    <string name="cant_find_disease">आपकी स्थिति नहीं मिल रही है?</string>
+    <string name="cant_find_disease_line">हम अपने स्वास्थ्य विशेषज्ञों के साथ लगातार काम कर रहे हैं ताकि हमारे मंच पर अधिक स्थिति संबंधी प्रवाह शामिल हो सकें।</string>
+    <string name="cant_find_disease_line1">कृपया वह स्थिति निर्दिष्ट करें जिसे आप प्रबंधित करना चाहते हैं और वर्तमान में सूचीबद्ध दिखाई नहीं दे रही है। हम इसके लिए एक कार्यप्रवाह तैयार करेंगे और इसे जोड़ने के बाद आपको सूचित करेंगे।</string>
+
+
+    <string name="condition_name">शर्त का नाम</string>
+
+
+    <string name="please_enter_valid_drug">कृपया मान्य दवा दर्ज करें</string>
+    <string name="please_select_route_value">कृपया मार्ग मान चुनें।</string>
+
+
+    <string name="please_enter_valid_condition">कृपया मान्य शर्त दर्ज करें</string>
+
+    <string name="ok">ठीक है</string>
+    <string name="request_drug_success">धन्यवाद! आपका मेडिसिन अनुरोध सफलतापूर्वक सबमिट कर दिया गया है।</string>
+
+
+    <string name="request_disease_success">धन्यवाद! आपका अनुरोध सफलतापूर्वक सबमिट कर दिया गया है।</string>
+    <string name="you_are_scheduled_to_take">आप लेने के लिए निर्धारित हैं</string>
+    <string name="on">पर</string>
+
+
+    <string name="and_symbol" translatable="false"><![CDATA[&]]></string>
+    <string name="comma" translatable="false">,</string>
+    <string name="of_every_month">हर महीने का</string>
+    <string name="of">का</string>
+    <string name="at">पर</string>
+    <string name="cancel">CANCEL</string>
+    <string name="proceed">PROCEED</string>
+    <string name="drug_reminders" translatable="false">Medicine Reminders</string>
+    <string name="submit">प्रस्तुत करना</string>
+    <string name="time_our_error">समय समाप्त।</string>
+    <string name="unknow_error_txt">अज्ञात त्रुटि</string>
+    <string name="parser_error">पार्स त्रुटि।</string>
+    <string name="netwotk_error">नेटवर्क से कनेक्ट करने में असमर्थ.</string>
+    <string name="server_error">या तो आपका इंटरनेट कनेक्शन बंद है या सर्वर कनेक्शन स्थापित नहीं हुआ है।</string>
+
+    <string name="auth_fail">प्रमाणीकरण विफल हो गया।</string>
+    <string name="done">सेव</string>
+
+
+    <string name="daily">रोज</string>
+    <string name="weekly">साप्ताहिक</string>
+    <string name="monthly">महीने के</string>
+    <string name="two_dosages_cant_be_same">दो खुराक समान नहीं हो सकते।</string>
+
+    <string name="add_drug_to_your_profile_msg">इस दवा को अपनी प्रोफाइल में जोड़ें</string>
+    <string name="this_action_will_remove">यह क्रिया हटा देगी</string>
+
+
+    <string name="from_drug_profile">\'s चिकित्सा प्रोफ़ाइल।</string>
+    <string name="from_user_profile">\'s उपयोगकर्ता रूपरेखा।</string>
+
+    <string name="are_you_sure_you_want_to_remove_this_medicine">क्या आप वाकई निकालना चाहते हैं ?</string>
+    <string name="deleting_text">इस स्वास्थ्य मीट्रिक को हटाने से यह आपकी प्रोफ़ाइल के लिए निकाल दी जाएगी लेकिन आप अपने डेटा को पुनर्स्थापित करने के लिए इसे कभी भी फिर से जोड़ सकते हैं।</string>
+
+    <string name="chronic_condition_management">पुरानी स्थिति प्रबंधन</string>
+
+    <string name="tracking_multiple_dependents_their_schedules">कई आश्रितों और उनके अनुसूचियों की ट्रैकिंग</string>
+
+    <string name="weekly_progress_reports">साप्ताहिक प्रगति रिपोर्ट</string>
+
+
+    <string name="pubmed_research_with_access">हजारों स्वास्थ्य संबंधी शोध लेखों तक पहुंच के साथ प्रकाशित शोध।</string>
+
+
+    <string name="please_select_time_for_reminder">कृपया अनुस्मारक के लिए समय चुनें।</string>
+    <string name="please_enter_dosage_value">कृपया खुराक मान दर्ज करें।</string>
+
+
+    <string name="please_select_day_value">कृपया दिन का मान चुनें</string>
+
+    <string name="please_select_frequency_value">कृपया आवृत्ति मान चुनें।</string>
+
+    <string name="update">अद्यतन</string>
+
+    <string name="create_standard_schedule">मानक अनुसूची बनाएं</string>
+
+    <string name="standard_schedule_msg">मानक शेड्यूल पर स्विच करने से आपका वर्तमान ओवरराइट हो जाएगा</string>
+
+
+    <string name="smart_Schedule_msg1">स्मार्ट शेड्यूल पर स्विच करने से आपका करंट ओवरराइट हो जाएगा </string>
+
+
+    <string name="smart_schedule">एक स्मार्ट शेड्यूल बनाएं</string>
+
+    <string name="smart_Schedule_msg2"> अनुसूचियां। </string>
+
+    <string name="as_needed" translatable="false">जैसी जरूरत थी</string>
+    <string name="select" translatable="false">चुनना</string>
+    <string name="edit_drug">मेडिसिन संपादित करें</string>
+    <string name="from">से</string>
+    <string name="can_not_connect">इंटरनेट से कनेक्ट नहीं हो सकता। कृपया पुन: प्रयास करें।</string>
+    <string name="something_went_wrong">कुछ गलत हुआ है, दोबारा कोशिश करें।</string>
+
+    <string name="session_expired_logging_out">आपका सत्र समाप्त हो गया है, लॉग आउट हो रहा है। कृपया फिर भाग लें।</string>
+    <string name="please_enter_valid_dosage">कृपया मान्य खुराक दर्ज करें</string>
+    <string name="select_start_date">प्रारंभ दिनांक आवश्यक है</string>
+    <string name="select_end_date">अंंतिम दिनांक आवश्यक है</string>
+    <string name="select_different_date">कृपया प्रारंभ दिनांक और अंंतिम दिनांक अलग अलग चुने</string>
+    <string name="select_different_date_one">कृपया अंंतिम दिनांक को प्रारंभ दिनांक से आगे कि चुने</string>
+
+
+    <string name="prescription_dose_not_run_out">नुस्खे की खुराक खत्म नहीं हुई। आज ही नुस्खे को फिर से भरें।</string>
+    <string name="prescription_refill_reminder">प्रिस्क्रिप्शन रिफिल रिमाइंडर</string>
+    <string name="ensure">सुनिश्चित करना</string>
+
+
+    <string name="take_daily_meds">उनकी दवा लेने के लिए।</string>
+    <string name="take_weekly_meds">उनके साप्ताहिक मेड लेने के लिए।</string>
+    <string name="take_monthly_meds">उनके मासिक मेड लेने के लिए।</string>
+    <string name="its">यह</string>
+    <string name="just_sending_an_remainder_for">बस के लिए रिमाइंडर भेज रहा हूँ</string>
+    <string name="messages_sent_by_kym_team">अधिसूचनाओं में संदेश होते हैं जो क्रेडा टीम द्वारा भेजे गए थे।</string>
+
+    <string name="please_select_valid_drug">कृपया वैध दवा का चयन करें</string>
+
+    <string name="need_help_adding_custom_drug">अपनी मेडिसिन के लिए स्मार्ट शेड्यूल जोड़ने में मदद चाहिए?</string>
+
+    <string name="add_smart_drug_video" translatable="false">H8WCeS0sfEc</string>
+    <string name="add_drug_video" translatable="false">oYRGoxWFCTI</string>
+
+    <string name="watch_video">वीडियो देखो</string>
+
+    <string name="need_help_adding_standard_drug">दवा जोड़ने में मदद चाहिए?</string>
+
+
+    <string name="empty_msg_disease">कॉन्फ़िगर करने और ट्रैक करने के लिए टैप करें</string>
+
+
+    <string name="cms" translatable="false">Cms</string>
+    <string name="lbs" translatable="false">Lbs</string>
+    <string name="kgs" translatable="false">Kgs</string>
+    <string name="fahrenheit" translatable="false">\u2109</string>
+    <string name="celsius" translatable="false">\u2103</string>
+
+
+    <string name="end_date_grater_start_date">खत्म होने की तारीख शुरू होने की तारीख से बड़ी होनी चाहिए</string>
+
+    <string name="are_you_sure">क्या आप वाकई इस पठन को हटाना चाहते हैं?</string>
+
+    <string name="deleteing_this_reading">इस पठन को हटाने से यह भी मिट जाएगा</string>
+
+    <string name="entry_from_profile">" आपकी प्रोफ़ाइल से प्रविष्टि।"</string>
+
+
+    <string name="delete" translatable="false">मिटाना</string>
+
+
+    <string name="select_date_track" translatable="false">तारीख़ चुनें</string>
+
+
+    <string name="select_time">Select Time</string>
+
+
+    <string name="temperature">Temperature</string>
+
+    <string name="measured_time">Time of Measurement</string>
+
+
+    <string-array name="measured_adapter" translatable="false">
+        <item>चुनना</item>
+        <item>नाश्ते/उपवास से पहले ग्लूकोज</item>
+        <item>नाश्ते के 2 घंटे बाद</item>
+        <item>दोपहर के भोजन से पहले</item>
+        <item>दोपहर के भोजन के 2 घंटे बाद</item>
+        <item>रात के खाने से पहले</item>
+        <item>रात के खाने के 2 घंटे बाद</item>
+        <item>सोने का समय</item>
+        <item>नाश्ते से पहले</item>
+        <item>व्यायाम से पहले</item>
+        <item>व्यायाम के बाद</item>
+        <item>ड्राइविंग से पहले</item>
+        <item>मध्य रात्रि में</item>
+    </string-array>
+
+
+    <string name="systolic"><b>सिस्टोलिक</b> (mm Hg)</string>
+
+
+    <string name="diastolic"><b>डायस्टोलिक </b>(mm Hg)</string>
+
+
+    <string name="current_weight">वर्तमान वजन</string>
+
+
+    <string name="add_notes">नोट्स जोड़ें</string>
+
+    <string name="track">अभी ट्रैक करें</string>
+    <string name="track_title">अपना भरें</string>
+
+
+    <string name="enter_track_value_greater_than_zero">ट्रैक मान 0 . से अधिक होना चाहिए</string>
+
+    <string name="enter_value_in_given_range">दी गई श्रेणी में मान दर्ज करें</string>
+
+    <string name="value_should_not_more_than_100">मान 100 . से अधिक नहीं होना चाहिए</string>
+
+    <string name="between">के बीच</string>
+    <string name="resting_heart_rate">आराम के दौरान हृदय दर</string>
+
+    <string name="reading" translatable="false">पढ़ना</string>
+    <string name="mgDl" translatable="false">mg/DL</string>
+
+    <string name="bpm" translatable="false">हर मिनट में धड़कने</string>
+
+    <string name="breaths_per_min" translatable="false">श्वास प्रति मिनट</string>
+
+    <string name="enter_temperature_value">तापमान मान दर्ज करें</string>
+    <string name="enter_weight_value">वजन मान दर्ज करें</string>
+
+
+    <string name="enter_respiratory_rate_value">श्वसन दर मान दर्ज करें </string>
+
+
+    <string name="plese_select_valid_date">कृपया मान्य तिथि चुनें</string>
+    <string name="plese_select_valid_time">कृपया मान्य समय चुनें</string>
+
+    <string name="enter_systolic_value">सिस्टोलिक मान दर्ज करें</string>
+
+    <string name="enter_diastolic_value">डायस्टोलिक मान दर्ज करें</string>
+
+    <string name="enter_blood_sugar_value">रक्त शर्करा मान दर्ज करें</string>
+
+    <string name="enter_blood_glucose_value">रक्त ग्लूकोज मान दर्ज करें</string>
+
+    <string name="dear">प्रिय </string>
+    <string name="fitbit_notification_message">, आपके पैरामीटर FitBit से अपडेट कर दिए गए हैं: </string>
+
+    <string name="heart_rate">हृदय दर</string>
+    <string name="weight">वज़न</string>
+    <string name="weight_" translatable="false">वज़न (lbs)</string>
+    <string name="water_intake">पानी सेवन</string>
+    <string name="hours_of_sleep">सोने के घंटे</string>
+    <string name="and">तथा </string>
+
+    <string name="select_measured">कृपया माप का समय चुनें</string>
+
+
+    <string name="enter_heart_rate_value">हृदय गति मान दर्ज करें</string>
+
+
+    <string name="condition">स्थितियाँ</string>
+    <string name="trackers">वाइटल्स</string>
+    <string name="symptom_trackers">लक्षण</string>
+
+    <string name="conditions">स्थितियाँ</string>
+
+    <string name="add_conditions_text">स्वास्थ्य की स्थिति जोड़ें</string>
+
+    <string name="no_condition_text">स्वास्थ्य की स्थिति को आसानी से ट्रैक और प्रबंधित करें। शुरू करने के लिए एक शर्त चुनें.</string>
+
+    <string name="add_now">अभी जोड़ें</string>
+
+    <string name="add_symptoms">लक्षण जोड़ें</string>
+
+
+    <string name="add_vital">स्वास्थ्य मेट्रिक्स जोड़ें</string>
+    <string name="add_test">टेस्ट जोड़ें</string>
+    <string name="add_checkup">चेकअप जोड़ें</string>
+    <string name="add_vaccines">वैक्सीन जोड़ें</string>
+    <string name="add_condition_lbl">शर्त जोड़ें</string>
+
+
+    <string name="health_matrics">स्वास्थ्य मेट्रिक्स</string>
+
+    <string name="health_matrics_description">स्वास्थ्य मेट्रिक्स की निगरानी की जा रही है</string>
+
+    <string name="checkups">चेक अप</string>
+
+    <string name="chekup_description">"चेकअप निर्धारित हैं "</string>
+
+
+    <string name="vaccines_description">टीके निर्धारित हैं</string>
+
+
+    <string name="vaccines">टीके</string>
+
+
+    <string name="apps_and_devices">ऐप्स और डिवाइस</string>
+
+    <string name="sync_smart_device_text">अपने ट्रैकर्स के लिए डेटा को स्वचालित रूप से ट्रैक करने के लिए स्मार्ट डिवाइस को सिंक करें</string>
+
+
+    <string name="export_report">निर्यात रिपोर्ट</string>
+
+    <string name="no_symptom_text">लक्षण ट्रैकिंग आपकी स्थिति से संबंधित मूल्यवान अंतर्दृष्टि प्रदान कर सकती है और निदान या उपचार के बारे में अधिक सूचित निर्णय लेने में सहायता कर सकती है। </string>
+
+    <string name="no_symptoms">कोई लक्षण नहीं मिला</string>
+    <string name="delete_condition">मिटाना</string>
+    <string name="symptoms">लक्षण</string>
+    <string name="read_more">अधिक पढ़ें</string>
+    <string name="no_checkups">कोई चेकअप नहीं मिला</string>
+    <string name="no_health_matrics">कोई स्वास्थ्य मैट्रिक्स नहीं मिला</string>
+
+    <string name="added_on_text">पर जोड़ा </string>
+    <string name="asthama_text">दमा</string>
+    <string name="add_symptoms_text">एक लक्षण जोड़ें</string>
+
+
+    <string name="payement_get_deducted_after_trial_period">आपकी परीक्षण अवधि समाप्त होने के बाद भुगतान काट लिया जाएगा</string>
+
+
+    <string name="payment_sucess">नामांकन सफल!</string>
+
+
+    <string name="plan_name_with_dot">योजना का नाम:</string>
+    <string name="amount_paid">राशि का भुगतान :</string>
+
+    <string name="billing_cycle_text">बिलिंग चक्र:</string>
+
+
+    <string name="please_wait">कृपया प्रतीक्षा करें...</string>
+
+
+    <string name="blood_pressure" translatable="false">रक्त चाप</string>
+
+    <string name="one_day">1 दिन</string>
+
+    <string name="yes_delete">हां, हटाएं</string>
+    <string name="text_no_keep">नहीं, रखें</string>
+
+
+    <string name="delete_condition_msg"> कंडीशन से सारा इतिहास साफ़ हो जाएगा &amp; इससे संबंधित ट्रैकर्स (आपके द्वारा जोड़े गए किसी भी अन्य शर्त के साथ सामान्य ट्रैकर्स को छोड़कर)। </string>
+
+
+    <string name="are_you_sure_deleting_condition">क्या आप सुनिश्चित हैं, आप की स्थिति का इतिहास खोना चाहते हैं </string>
+
+
+    <string name="enter_allegy_name">यहां एलर्जी दर्ज करें</string>
+    <string name="search_hint_condition">शर्त का नाम दर्ज करें</string>
+    <string name="search_hint_vital">स्वास्थ्य मेट्रिक नाम दर्ज करें</string>
+    <string name="search_hint_checkup">चेकअप नाम दर्ज करें</string>
+    <string name="search_hint_vaccine">वैक्सीन का नाम दर्ज करें</string>
+    <string name="tests">चेक अप</string>
+
+    <string name="add_condition_header">शर्त जोड़ें</string>
+
+    <string name="need_help_adding_condition">अपनी प्रोफ़ाइल में एक शर्त जोड़ने में सहायता चाहिए?</string>
+    <string name="need_help_adding_dependent">अपनी प्रोफ़ाइल में किसी आश्रित को जोड़ने में सहायता चाहिए?</string>
+    <string name="add_custom_condition">इस शर्त को अपनी प्रोफाइल में जोड़ें</string>
+    <string name="we_recommend_description_add_condition" translatable="false">आप ट्रैकर्स को बंद या चालू करके इस सूची को कस्टमाइज़ कर सकते हैं। आप प्रत्येक ट्रैकर्स को बाद में कॉन्फ़िगर करें टैब में कस्टमाइज़ कर सकते हैं।</string>
+
+    <string name="add_condition_video" translatable="false">1essIoedqfg</string>
+    <string name="we_recommend_add_condition" translatable="false">हम निम्नलिखित ट्रैकर्स की सलाह देते हैं</string>
+    <string name="please_select_valid_condition">कृपया मान्य शर्त चुनें</string>
+    <string name="premium_line1" translatable="false">कई आश्रितों और उनके शेड्यूल को ट्रैक करें</string>
+    <string name="premium_line2" translatable="false">अपनी दवा पालन आदतों को ट्रैक करें</string>
+    <string name="premium_line3" translatable="false">साप्ताहिक स्वास्थ्य रिपोर्ट प्राप्त करें</string>
+    <string name="premium_line4" translatable="false">पबमेड से हजारों शोध लेख खोजें और पढ़ें</string>
+    <string name="help" translatable="false">मदद करना</string>
+
+    <string name="next_due_date">अगला देय तिथि</string>
+
+    <string-array name="frequency_test_adapter" translatable="false">
+        <item>चुनना</item>
+        <item>सप्ताह</item>
+        <item>महीना</item>
+        <item>साल</item>
+    </string-array>
+
+
+    <string name="one_year">1 साल</string>
+    <string name="fasting_glucose_levels">उपवास ग्लूकोज का स्तर</string>
+    <string name="upgrade_to_kym_premium">KnowYourMeds Premium में अपग्रेड करें और:</string>
+    <string name="purchase">खरीदना</string>
+    <string name="premium">बीमा किस्त</string>
+    <string name="kym">KnowYourMeds</string>
+    <string name="go_premium">प्रीमियम के लिए जाएँ</string>
+    <string name="kym_premium_lbl">KnowYourMeds प्रीमियम</string>
+    <string name="select_this_disease" translatable="false">एक रोग चुनें</string>
+    <string name="cant_find_your_disease">Can\'t find your condition? &#160;<font color="#4abc93">Add Here</font></string>
+    <string name="custom_condition_name">कस्टम स्थिति का नाम</string>
+    <string name="vitals">स्वास्थ्य मेट्रिक्स</string>
+    <string name="start_managing">प्रबंधन शुरू करें</string>
+    <string name="add_condition_btn">शर्त जोड़ें</string>
+    <string name="recommended_condition_text">उफ़! ऐसा लगता है कि हमारे पास आपकी स्थिति के लिए मैप किए गए ट्रैकर्स नहीं हैं। हम अनुशंसा करते हैं कि आप अपनी स्थिति को बेहतर ढंग से प्रबंधित करने के लिए आगे की स्क्रीन में स्वास्थ्य मीट्रिक, जांच, लक्षण और टीकों से युक्त ट्रैकर्स की अपनी सूची बनाएं।</string>
+
+    <string name="choose_vaccnine">वैक्सीन चुनें</string>
+    <string name="vaccine_name">वैक्सीन का नाम</string>
+
+    <string name="checkup_name">चेक-अप नाम</string>
+
+    <string name="custom_vital_unit_hint">Ex. Count(1-10)</string>
+
+    <string name="unit">इकाई</string>
+
+    <string-array name="custom_condition_array">
+        <item>Vital</item>
+        <item>Checkup</item>
+        <item>Vaccine</item>
+    </string-array>
+
+    <string name="type">Type</string>
+    <string name="choose_vital">स्वास्थ्य मेट्रिक नाम</string>
+    <string name="what_do_you_want_to_measure">आप क्या मापना चाहते हैं?</string>
+    <string name="custom_vital_name_hint">Ex. Pain Management</string>
+    <string name="custom_vital_parameter_hint">Ex. Glass of Water</string>
+
+    <string name="vital_name">कस्टम महत्वपूर्ण नाम</string>
+
+    <string name="parameter">मापदण्ड नाम</string>
+
+    <string name="please_select_checkup_from_the_list">कृपया चेकअप नाम दर्ज करें</string>
+
+    <string name="please_select_option_from_the_list">कृपया सूची में से विकल्प का चयन करें</string>
+    <string name="please_select_vaccine_from_the_list">कृपया वैक्सीन का नाम चुनें</string>
+    <string name="no_coupons_available_right_now" translatable="false">अभी कोई कूपन उपलब्ध नहीं है</string>
+
+    <string name="please_select_frequency_value_should_be_greater_than_zero">कृपया चुनें कि आवृत्ति मान शून्य से अधिक होना चाहिए</string>
+
+    <string name="please_select_frequency">कृपया आवृत्ति चुनें</string>
+
+
+    <string name="add_this_health_metric_to_your_profile">इस मेट्रिक्स को अपनी प्रोफ़ाइल में जोड़ें</string>
+    <string name="add_this_checkup_to_your_profile">इस चेकअप को अपनी प्रोफाइल में जोड़ें</string>
+    <string name="add_this_vaccine_to_your_profile">इस वैक्सीन को अपनी प्रोफाइल में जोड़ें</string>
+
+
+    <string name="day">दिन</string>
+    <string name="week" translatable="false">सप्ताह</string>
+    <string name="month" translatable="false">महीना</string>
+
+
+    <string name="test" translatable="false">परीक्षण</string>
+
+
+    <string name="suggested_vitals">सुझाई गई महत्वपूर्ण जानकारी</string>
+
+
+    <string name="vital" translatable="false">स्वास्थ्य मेट्रिक्स</string>
+    <string name="vaccine" translatable="false">टीके</string>
+
+
+    <string name="custom">रीति</string>
+    <string name="cstom" translatable="false">रीति</string>
+
+    <string name="sp_day" translatable="false">दिन</string>
+
+
+    <string name="please_type_customvital">कृपया कस्टम स्वास्थ्य मेट्रिक्स नाम दर्ज करें</string>
+
+    <string name="please_enter_parameter_name">कृपया पैरामीटर नाम दर्ज करें</string>
+    <string name="please_enter_unit_name">कृपया माप की इकाई दर्ज करें</string>
+
+    <string name="please_select_vital">कृपया स्वास्थ्य मेट्रिक्स का नाम दर्ज करें</string>
+
+
+    <string name="please_enter_check_name">कृपया चेकअप नाम दर्ज करें</string>
+
+    <string name="please_enter_vaccine_name">कृपया वैक्सीन का नाम दर्ज करें</string>
+
+
+    <string name="none">कोई भी नहीं</string>
+    <string name="difficult">कठिन</string>
+    <string name="search_or_add_new">खोजें या नया जोड़ें</string>
+    <string name="systolic_text">सिस्टोलिक</string>
+    <string name="diastolic_text">डायस्टोलिक</string>
+
+
+    <string name="add">जोड़ें</string>
+    <string name="news">समाचार</string>
+
+
+    <string name="muscle_ache_s" translatable="false">मांसपेशियों के दर्द)</string>
+    <string name="joint_s_pain" translatable="false">जोड़ों का दर्द</string>
+    <string name="headache" translatable="false">सिरदर्द</string>
+
+
+    <string name="count">गिनती करना</string>
+    <string name="severity">तीव्रता</string>
+
+
+    <string name="select_type_of_symptom">लक्षण के प्रकार का चयन करें</string>
+
+
+    <string name="please_select_valid_disease">कृपया वैध रोग का चयन करें</string>
+
+
+    <string name="activate">सक्रिय</string>
+
+
+    <string name="my_condition">शर्त जोड़ें</string>
+
+
+    <string name="blood_pressure_value">120/80</string>
+    <string name="blood_pressure_unit">mmHg</string>
+
+
+    <string name="recorded_on">इस पर रिकॉर्ड किया गया:</string>
+    <string name="due_date">नियत तारीख:</string>
+
+
+    <string name="blood_albumin_levels">रक्त एल्बुमिन स्तर</string>
+
+
+    <string name="vaccines_text">इन्फ्लुएंजा टीकाकरण</string>
+
+
+    <string name="how_frequency_to_Check">आप इसे कितनी बार जांचना चाहते हैं?</string>
+
+
+    <string name="please_enter_valid_freuency">कृपया मान्य आवृत्ति दर्ज करें</string>
+
+
+    <string name="compare">तुलना करना</string>
+    <string name="research">शोध करना</string>
+    <string name="drugs">दवाइयाँ</string>
+    <string name="schedule">अनुसूची</string>
+
+
+    <string name="are_you_sure_you_want_to_remove_this">क्या आप वाकई निकालना चाहते हैं</string>
+
+    <string name="delete_this_vaccine" translatable="false">इस टीके को हटाने से यह आपकी प्रोफ़ाइल के लिए निकल जाएगा लेकिन आप अपने डेटा को पुनर्स्थापित करने के लिए इसे कभी भी फिर से जोड़ सकते हैं।</string>
+
+
+    <string name="you_want_to_remove">"आप हटाना चाहते हैं "</string>
+
+
+    <string name="medicine_dosage" translatable="false">मात्रा बनाने की विधि</string>
+    <string name="quantity" translatable="false">मात्रा</string>
+    <string name="member_id" translatable="false">सदस्य आईडी</string>
+    <string name="group" translatable="false">समूह</string>
+    <string name="bin" translatable="false">BIN</string>
+    <string name="pcn" translatable="false">PCN</string>
+
+
+    <string name="connect_to_your_health_apps_and_devices">अपने स्वास्थ्य ऐप्स और उपकरणों से कनेक्ट करें।</string>
+
+    <string name="connect">जुडिये</string>
+
+    <string name="fit_bit">Fitbit</string>
+
+    <string name="you_are_monitoring_the_following_parameters">आप निम्नलिखित मापदंडों की निगरानी कर रहे हैं:</string>
+
+
+    <string name="disconnect">डिस्कनेक्ट</string>
+
+
+    <string name="no_internet_msg_gr" translatable="false">इंटरनेट से कनेक्ट नहीं हो सकता। कृपया पुन: प्रयास करें।</string>
+
+
+    <string name="are_you_sure_you_want_remove_notification">क्या आप इस सूचना को हटाना चाहते हैं?</string>
+
+    <string name="unread_notification">अपठित अधिसूचना</string>
+    <string name="inbox" translatable="false">Inbox</string>
+    <string name="unread_notifications">अपठित अधिसूचनाएँ</string>
+
+
+    <string name="fitbit_switches_error_message">कृपया कम से कम एक विकल्प सक्षम करें</string>
+    <string name="are_you_sure_you_want_to_disconnect_fit_bit">क्या आप वाकई Fitbit को डिस्कनेक्ट करना चाहते हैं?</string>
+
+    <string name="no">नहीं</string>
+    <string name="alert">चेतावनी!</string>
+
+
+    <string name="to">प्रति</string>
+    <string name="yearly">सालाना</string>
+    <string name="plan">योजना</string>
+    <string name="yes">हाँ</string>
+
+
+    <string name="you_can_see">आप इन मापदंडों को "स्थिति" अनुभाग के अंतर्गत ट्रैकर्स टैब में देख सकते हैं।</string>
+
+    <string name="connected">जुड़े हुए!</string>
+
+
+    <string name="stay_on_top">अपने स्वास्थ्य के शीर्ष पर रहें। प्रगति को चिह्नित करने के लिए ट्रैकिंग प्रारंभ करें। </string>
+
+
+    <string name="track_now">अभी ट्रैक करें</string>
+
+
+    <string name="food_diary_nutrition_plan_text">ऐसा लगता है कि आपको अभी तक पोषण योजना नहीं सौंपी गई है!</string>
+
+
+    <string name="delete_blood_pressure">ब्लड प्रेशर मिटाएं</string>
+    <string name="configure_baseline_text">अपने रीडिंग की बेसलाइन कॉन्फ़िगर करें</string>
+    <string name="about_parameter">रक्तचाप के बारे में</string>
+    <string name="weight_goal">वजन लक्ष्य</string>
+    <string name="weight_matric">वजन मेट्रिक्स</string>
+    <string name="target_weight">लक्ष्य वजन</string>
+
+
+    <string name="enable_permission_msg">रिपोर्ट डाउनलोड करने के लिए कृपया KnowYourMeds को अपने डिवाइस पर फ़ाइलों और मीडिया तक पहुंचने की अनुमति दें। आप इसे सेटिंग >> ऐप्स >> ऐप्स प्रबंधित करें >> Knowyourmeds >> ऐप अनुमतियों के तहत पा सकते हैं</string>
+    <string name="edit_schedule">अनुसूची संपादित करें</string>
+
+
+    <string name="during_past_text_onboard">पिछले एक महीने के दौरान, कृपया निम्नलिखित के लिए अनुमानित संख्या चुनें:</string>
+    <string name="no_items_found_saved">सहेजे गए के अंतर्गत दिखाने के लिए कोई खाद्य सामग्री नहीं है</string>
+    <string name="lets_add_your_ideal">"आइए अपना आदर्श जोड़ें"</string>
+    <string name="reading_recommended_by_doctor">पढ़ना, जैसा कि आपके डॉक्टर ने सिफारिश की है।</string>
+    <string name="we_will_use_this">हम इसे भविष्य की तुलनाओं के लिए आधार रेखा के रूप में उपयोग करेंगे।</string>
+    <string name="remove_checkup">क्या आप वाकई इसे हटाना चाहते हैं</string>
+    <string name="delete_symptom">इस लक्षण को हटाने से यह आपकी प्रोफ़ाइल के लिए निकल जाएगा लेकिन आप अपने डेटा को पुनर्स्थापित करने के लिए इसे कभी भी फिर से जोड़ सकते हैं।</string>
+
+
+    <string name="deleting_this_checkup_text">इस चेक-अप को हटाने से यह आपकी प्रोफ़ाइल से निकल जाएगा लेकिन आप अपने डेटा को पुनर्स्थापित करने के लिए इसे कभी भी फिर से जोड़ सकते हैं।</string>
+
+    <string name="onboading_sucess">आपको बेहतर तरीके से जानने में हमारी मदद करने के लिए धन्यवाद ताकि हम आपके लिए कुछ ऐप सुविधाओं को कस्टमाइज़ कर सकें!</string>
+    <string name="just_couple_more_things">बस कुछ और बातें...</string>
+    <string name="i_disagree">मैं असहमत हूं</string>
+    <string name="data_sharing_consent">डाटा प्राइवेसी</string>
+    <string name="i_disagree_msg">हम समझते हैं कि आप अपना डेटा साझा नहीं करना चाहेंगे। इस बीच, हम आपके लिए फ़ाइल में मौजूद पंजीकरण डेटा को हटा देंगे।</string>
+    <string name="finish">खत्म करना</string>
+    <string name="anything_else">और कुछ?</string>
+    <string name="thankyou_text">आपको धन्यवाद! हमने आपके लिए ऐप सेट किया है। हमने आपकी प्रोफ़ाइल में कुछ स्वास्थ्य मेट्रिक्स, लक्षण और चेकअप जोड़े हैं, जिन्हें हम आपको क्रोन की बीमारी के शीर्ष पर बने रहने में मदद करने के लिए ट्रैक करने की सलाह देते हैं।</string>
+    <string name="how_to_add_symptom">लक्षण कैसे जोड़ें</string>
+    <string name="how_to_connect_fitbit">फिटबिट कैसे कनेक्ट करें</string>
+    <string name="how_to_add_health_metrics">स्वास्थ्य मेट्रिक्स कैसे जोड़ें</string>
+    <string name="lunch_name">भोजन का नाम</string>
+    <string name="text_or">या</string>
+    <string name="alert_msg">इस पायलट के हिस्से के रूप में, आप एक पोषण विशेषज्ञ के साथ मुफ्त परामर्श के लिए पात्र हैं जो यह डेटा प्रदान कर सकता है। कृपया हमें आपके लिए पोषण विशेषज्ञ के साथ कॉल सेट करने के लिए होम पेज से चैट आइकन से एक संदेश भेजें।</string>
+    <string name="track_symptom_msg">अपनी स्थिति से संबंधित पैटर्न के शीर्ष पर बने रहने के लिए अपने लक्षणों को ट्रैक करें</string>
+
+    <string name="onboarding_description_dummy">ऐप और इसमें शामिल सेवाओं का उपयोग करके, आप सहमति देते हैं कि हमारी टीम (जिनमें से सभी आपकी गोपनीयता की रक्षा के लिए अनुबंधित और कानून द्वारा बाध्य हैं) आपके व्यक्तिगत स्वास्थ्य डेटा को देखें, जैसा कि आगे हमारी गोपनीयता नीति में वर्णित है।\n\n आपका स्वास्थ्य डेटा गोपनीय है। हम आपकी सहमति के बिना इसे किसी के साथ साझा नहीं करेंगे। अवधि। अभी भी प्रश्न हैं: हमें LupusProgram@KnowYourMeds.com पर ईमेल करें</string>
+
+
+    <string name="missed_previously">- चुक गया</string>
+
+
+    <string name="text_no_cancel">नहीं, रद्द करें</string>
+
+    <string name="plus_track">+अभी ट्रैक करें</string>
+
+    <string name="configure_weight_description">नीचे दिए गए विकल्पों को भरकर आप जिस लक्ष्य को प्राप्त करने का प्रयास कर रहे हैं उसे कॉन्फ़िगर करने में हमारी सहायता करें</string>
+    <string name="configure_weight">"वजन कॉन्फ़िगर करें"</string>
+    <string name="mark_as_done">पूर्ण हुआ चिह्नित करें</string>
+
+
+    <string name="view_report">रिपोर्ट देखें</string>
+    <string name="this_action_will_delete">यह क्रिया हट जाएगी</string>
+    <string name="all_associated_data_with_it">और इससे जुड़े सभी डेटा। क्या आप अभी भी जारी रखना चाहते हैं</string>
+
+    <string name="this_str">इस</string>
+    <string name="entry_will_be_deleted">आपकी प्रोफ़ाइल से प्रविष्टि हटा दी जाएगी।</string>
+    <string name="account_monthly">महीने के</string>
+    <string name="account_yearly">वार्षिक</string>
+    <string name="slash_monthly" translatable="false">महीने के</string>
+    <string name="slash_yearly" translatable="false">वार्षिक</string>
+    <string name="premium_plans">प्रीमियम योजनाएं</string>
+    <string name="premium_features">प्रीमियम सुविधाएँ</string>
+    <string name="my_subscription">मेरी सदस्यता</string>
+
+
+    <string name="time_text" translatable="false">Extremely \n 247+</string>
+    <string name="time_text1" translatable="false">Obese \n 186-241</string>
+
+    <string name="frequency_to_check">जाँच करने की आवृत्ति</string>
+
+    <string name="value" translatable="false">मूल्य</string>
+    <string name="frequency_to_take_vaccination">जाँच करने की आवृत्ति</string>
+    <string name="get_coupons" translatable="false">कूपन देखें</string>
+    <string name="select_form" translatable="false">प्रपत्र</string>
+    <string name="select_dosage" translatable="false">मात्रा बनाने की विधि</string>
+    <string name="select_quantity" translatable="false">मात्रा</string>
+
+
+    <string name="frequency_to_Check">Frequency To Check</string>
+    <string name="not_define">Not Defined</string>
+    <string name="configure">Configure</string>
+
+
+    <string name="min_mgdl" translatable="false">Minimum mg/DL</string>
+    <string name="max_mgdl" translatable="false">Maximum mg/DL</string>
+    <string name="bpm_min" translatable="false">Beats Per Minute (Min)</string>
+    <string name="bpm_max" translatable="false">Beats Per Minute (Max)</string>
+
+    <string name="ft" translatable="false">Feet</string>
+    <string name="cm" translatable="false">Cms</string>
+    <string name="current_height">Current Height</string>
+    <string name="weight_chart">Weight Chart</string>
+    <string name="incs" translatable="false">Incs</string>
+    <string name="view_coupons_details" translatable="false">View coupon details</string>
+    <string name="with_free_coupon" translatable="false">WITH FREE COUPON</string>
+    <string name="get_free_coupon" translatable="false">GET FREE COUPON</string>
+
+
+    <string-array name="ft_adapter" translatable="false">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+    <string-array name="four_incs_adapter" translatable="false">
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="six_incs_adapter" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+
+    <string name="minimum">न्यूनतम</string>
+    <string name="maximum">ज्यादा से ज्यादा</string>
+
+
+    <string name="in_app_reminder">ऐप रिमाइंडर में</string>
+    <string name="drug_reminders_msg">Kindly grant permission to disable battery optimization. </string>
+    <string name="slash_month">/महीना</string>
+    <string name="slash_year">/साल</string>
+    <string name="select_day">दिन चुनें</string>
+    <string name="this_record">यह रिकॉर्ड?</string>
+    <string name="shop_now">अभी खरीदें</string>
+    <string name="delete_banner_text">आपको यह और इसी तरह के ऑफ़र \"मेरे ऑफ़र\" अनुभाग के अंतर्गत मिल सकते हैं</string>
+    <string name="my_offers">मेरे प्रस्ताव</string>
+    <string name="no_browser_found">कोई ब्राउज़र नहीं मिला</string>
+    <string name="your_current">आपका वर्तमान</string>
+    <string name="plan_will_be_active_until">योजना तब तक सक्रिय रहेगी</string>
+    <string name="billing_for_your">आपके लिए बिलिंग</string>
+    <string name="plan_will_start_from">से शुरू होगी योजना</string>
+    <string name="do_you_wish_to_continue">क्या आप जारी रखना चाहते हैं?</string>
+    <string name="my_adherence_history">मेरा पालन इतिहास</string>
+
+
+    <string name="all_covered">सभी कवर</string>
+    <string name="nothing_is_scheduled_for_the_day">दिन के लिए कुछ भी निर्धारित नहीं था</string>
+    <string name="my_adherence">मेरा पालन</string>
+    <string name="you_have_not_tracked">आपने ट्रैक नहीं किया</string>
+    <string name="entry">प्रवेश</string>
+    <string name="breaths_min">श्वास प्रति मिनट (न्यूनतम)</string>
+    <string name="breaths_max">श्वास प्रति मिनट (अधिकतम)</string>
+
+
+    <string name="blue_dot" translatable="false"><font color="#2b41fa"> <font size="100">.</font></font></string>
+    <string name="yellow_dot" translatable="false"><font color="#fea601" size="15">.</font></string>
+    <string name="measured">मापा</string>
+
+    <string name="sys_dia_value_greater">सिस्टोलिक मान डायस्टोलिक मान से अधिक होना चाहिए।</string>
+
+    <string name="no_record_found">आपने अभी तक कोई डेटा ट्रैक नहीं किया है। अपनी प्रगति देखने के लिए ट्रैकिंग शुरू करें।</string>
+
+    <string name="max_value_greater">अधिकतम मान न्यूनतम मान से अधिक होना चाहिए।</string>
+
+
+    <string name="value_should_in_be_in_between_of_60_100">60 से 100 . की दी गई श्रेणी में मान दर्ज करें</string>
+    <string name="enter_configure_value_greater_than_zero">कॉन्फ़िगर मान 0 . से अधिक होना चाहिए</string>
+    <string name="your_are_not_managing_any_diseases">आप किसी भी स्थिति का प्रबंधन नहीं कर रहे हैं</string>
+
+    <string-array name="incs_adapter" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+
+    <string name="recommended_by_doctor">आपके प्रोफ़ाइल के लिए आपके डॉक्टर द्वारा अनुशंसित के अनुसार पढ़ना। \n \nहम इन रीडिंग का उपयोग आपके भविष्य के सभी रीडिंग से तुलना करने के लिए आधार रेखा के रूप में करेंगे।</string>
+
+    <string name="disease_txt">बीमारी</string>
+    <string name="enter_the">अपना भरें</string>
+
+
+    <string name="about">के बारे में</string>
+
+
+    <string-array name="configure_weight_spinner" translatable="false">
+        <item>कोई भी नहीं</item>
+        <item>वजन कम करना</item>
+        <item>वजन को बनाए रखने</item>
+        <item>वजन बढ़ना</item>
+    </string-array>
+
+
+    <string name="allergy">एलर्जी</string>
+    <string name="mild">हल्का</string>
+    <string name="severe">गंभीर</string>
+
+
+    <string name="major">मेजर</string>
+    <string name="moderate">संतुलित</string>
+    <string name="minor">नाबालिग</string>
+
+
+    <string name="updated_on_text">अपडेट किया</string>
+    <string name="track_medicines">ट्रैक दवाएं</string>
+
+
+    <string name="are_you_sure_deleting_symptom">क्या आप वाकई इसे हटाना चाहते हैं</string>
+    <string name="save_changes_text">कृपया ट्रैक दवाओं के अंदर आपके द्वारा किए गए परिवर्तनों को सहेजें।</string>
+
+
+    <string name="mark_all_read">सभी को पढ़ा हुआ मार्क करें।</string>
+
+
+    <string name="show_more_notifications">अधिक अधिसूचना के लिए क्लिक करें।</string>
+
+    <string name="no_notification_msg"><font size="14">इस समय कोई नई सूचनाएँ नहीं हैं।</font></string>
+
+
+</resources>

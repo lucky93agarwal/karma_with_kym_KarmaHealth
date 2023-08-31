@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devkraft.karmahealth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:name=".KymApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logoss"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logoss"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KarmaHealth">
+
+        <activity
+            android:name=".Screen.InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.SignupOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.SignUpMobileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".razorpay.ParchesCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.CodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.NotificationDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.SymptomsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.ConfigureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.TrackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.ConfigureWeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.TrackCheckupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.FitBitLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.TestConfigureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.AppsDevicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.CheckupDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.TrackerDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.FullScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.AddDiseaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.ManageVitalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.AddSymptomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.AddConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.MyConditionsNewActivity"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="CLEVERTAP_ACCOUNT_ID"
+            android:value="R78-9Z7-6W6Z" />
+
+        <service
+            android:name=".MyAndroidFirebaseMsgService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".BroadcastReceiver.NotificationReceiver"
+            android:exported="true" />
+        <receiver
+            android:name=".BroadcastReceiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- added for testing notification 17/12/2021 -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/newlogo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="default_channel_id" />
+
+        <receiver
+            android:name=".BroadcastReceiver.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <!-- add these new lines by ketan for boot completed issue -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="CLEVERTAP_TOKEN"
+            android:value="a1c-ba2" />
+
+        <activity
+            android:name=".Screen.AddDrugActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.TaskdetalsEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.TrackDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.MyTrackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.DrPrescriptionDownloadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.DoctorPrescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.AvailableDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.OTPActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Screen.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Screen.SignupActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!--<activity
+            android:name=".TestingActivity"
+            android:exported="false" />-->
+        <activity
+            android:name=".Screen.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity
+            android:name=".TestingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name=".Screen.MainActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.devkraft.karmahealth.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/freshchat_file_provider_paths" />
+        </provider>
+
+        <receiver
+            android:name=".MySMSBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

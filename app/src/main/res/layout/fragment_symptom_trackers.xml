@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_symptom_track"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_add_symptoms_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:text="कोई लक्षण नही मिले।"
+                android:textColor="@color/header"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:text="@string/no_symptom_text"
+                android:textColor="@color/subText" />
+
+            <Button
+                android:id="@+id/button_add_symptom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:text="@string/add_now" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_save_cancel"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:id="@+id/textview_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Select Date" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/imageview_date"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/down_arrow_registration_disney" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_export_report"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_configure_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/export_report"
+                        android:textColor="@color/green_blue"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_symtomps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp" />
+
+            <View
+                android:id="@+id/view_symptom_save_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_save_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/button_cancel_symptom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/green_border_rounded_bg"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_save_symptom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green_blue"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            fab:menu_animationDelayPerItem="50"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="@color/homeheading"
+            fab:menu_colorPressed="@color/homeheading"
+            fab:menu_colorRipple="@color/homeheading"
+            fab:menu_fab_size="mini"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_labels_colorNormal="@color/homeheading"
+            fab:menu_labels_colorPressed="@color/white"
+            fab:menu_labels_colorRipple="@color/white"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="@color/white"
+            fab:menu_labels_textSize="11sp"
+            fab:menu_openDirection="up">
+
+            <!-- 4) Add condition FloatingActionButton -->
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item_add_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/bottom_menu_conditions_selection"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/white"
+                fab:fab_label="@string/add_condition_lbl"
+                fab:fab_size="mini" />
+
+            <!-- 3) Add Side Effect FloatingActionButton -->
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item_add_vital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vital"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/white"
+                fab:fab_label="@string/add_vital"
+                fab:fab_size="mini" />
+
+            <!-- 2) Add Allergy FloatingActionButton -->
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item_add_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/checkup"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white"
+                android:visibility="gone"
+                fab:fab_colorRipple="@color/white"
+                fab:fab_label="@string/add_checkup"
+                fab:fab_size="mini" />
+
+            <!-- 1) Add Disease FloatingActionButton -->
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item_add_vaccines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vaccine"
+                android:visibility="gone"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/white"
+                fab:fab_label="@string/add_vaccines"
+                fab:fab_size="mini" />
+
+            <!--Symptoms-->
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item_add_symptoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_symptom_icon_small"
+                android:visibility="visible"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white"
+                fab:fab_colorRipple="@color/white"
+                fab:fab_label="@string/add_symptoms"
+                fab:fab_size="mini" />
+
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

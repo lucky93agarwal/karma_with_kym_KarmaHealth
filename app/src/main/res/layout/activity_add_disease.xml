@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_colour"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarThemeWhite">
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <FrameLayout
+            android:id="@+id/containerView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/premiumMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/premium_layout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/premiumLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:text="kfdskhf"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/userSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/hrLine" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/dataLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mangeTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/select_this_disease"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/selectDiseaseLl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/diseaseSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/hrLine" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/cantFindYourDisease"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/cant_find_your_disease"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                        <!--START: custom condition layout-->
+
+                        <LinearLayout
+                            android:id="@+id/customConditionLl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/custom_condition_name" />
+
+                            <EditText
+                                android:id="@+id/customConditionEt"
+                                android:layout_width="match_parent"
+                                android:inputType="text"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:id="@+id/addCustomConditionBtn"
+                                android:layout_width="wrap_content"
+                                android:text="@string/add_condition_lbl"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--               start: search text for condition-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="1dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            android:background="@color/white">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/cndtn_search_text"
+                                android:layout_width="366dp"
+                                android:layout_height="32dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:layout_weight="0.9"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/search_hint_condition"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/hint" />
+
+
+                            <ImageView
+                                android:id="@+id/condition_searchIv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="7dp"
+                                android:layout_weight="0.1"
+                                android:src="@drawable/search" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/hr_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/cndtn_search_text"
+                            android:background="@color/hrLine" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:id="@+id/addasCustomBtn"
+                            android:text="@string/add_condition_btn"
+                            android:layout_marginTop="50dp"
+                            android:layout_gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:visibility="gone"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <!--START: vital layout-->
+
+                    <LinearLayout
+                        android:id="@+id/vitalLl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="3dp"
+                            android:text="@string/vitals"
+                            android:textColor="@color/header"
+                            android:textSize="18sp" />
+
+
+                        <com.devkraft.karmahealth.Utils.ExpandableHeightListView
+                            android:id="@+id/diseaseList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:divider="@color/hrLine"
+                            android:dividerHeight="2dp" />
+
+                    </LinearLayout>
+
+                    <!--START: test layout-->
+
+                    <LinearLayout
+                        android:id="@+id/testLl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="3dp"
+                            android:text="@string/tests"
+                            android:textColor="@color/header"
+                            android:textSize="18sp" />
+
+
+                        <com.devkraft.karmahealth.Utils.ExpandableHeightListView
+                            android:id="@+id/testList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:divider="@color/hrLine"
+                            android:dividerHeight="2dp" />
+
+                    </LinearLayout>
+
+                    <!--START: vaccination layout-->
+
+                    <LinearLayout
+                        android:id="@+id/vaccinationLl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="3dp"
+                            android:text="@string/vaccines"
+                            android:textColor="@color/header"
+                            android:textSize="18sp" />
+
+
+                        <com.devkraft.karmahealth.Utils.ExpandableHeightListView
+                            android:id="@+id/vaccinationList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:divider="@color/hrLine"
+                            android:dividerHeight="2dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</LinearLayout>

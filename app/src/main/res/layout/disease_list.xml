@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Blood Sugar Levels" />
+
+
+        <TextView
+            android:id="@+id/frequency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            android:padding="5dp"
+            android:text="Once in a year" />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/notification_switch_compat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:checked="false"
+            android:visibility="gone"
+            app:theme="@style/Color1SwitchStyle" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/hr_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:visibility="gone"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/hrLine" />
+
+</LinearLayout>

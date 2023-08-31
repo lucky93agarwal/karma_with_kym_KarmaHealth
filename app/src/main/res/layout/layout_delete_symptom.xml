@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/grayish_brown"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="135dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/rounded_shape_button"
+                android:backgroundTint="#00b398"
+                android:drawableStart="@drawable/ic_delete_white_icon"
+                android:text="@string/delete"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button_no_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_shape_button"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="#00b398"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textview_delete_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/delete_symptom"
+                android:textColor="#868686"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+

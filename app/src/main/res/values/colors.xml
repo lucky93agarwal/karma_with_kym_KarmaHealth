@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="background_new">#CEEAE8</color>
+    <color name="gray">#808080</color>
+    <color name="grid_border">#DFDCDC</color>
+    <color name="textColor">#6c6e6e</color>
+    <color name="header">#303738</color>
+    <color name="creda_theme_new_color">#115E67</color>
+
+    <color name="hint">#6c6e6e</color>
+    <color name="grayish_brown">#414141</color>
+    <color name="green_blue">#223A60</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF1892D3</color>
+    <color name="purple_700">#FF1892D3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="title">#223A60</color>
+    <color name="body">#414141</color>
+    <color name="button">#EB4B63</color>
+    <color name="red">#FF0000</color>
+    <color name="text_color">#50414141</color>
+    <color name="background">#F5F6FB</color>
+    <color name="circlebackground">#DAF5FF</color>
+    <color name="homeheader">#DDF7FF</color>
+    <color name="homeheading">#223A60</color>
+    <color name="subText">#6c6e6e</color>
+    <color name="divider">#26C3C3C3</color>
+    <color name="addbtn">#EB4B63</color>
+
+
+    <color name="backcolor">#D0D0D0</color>
+
+    <color name="shimmerColor">#C2C2C2</color>
+    <color name="windowbg">#F3F2F2</color>
+
+    <color name="date">#868686</color>
+
+    <color name="trackbody">#F9F9F9</color>
+
+    <color name="hrLine">#dfdcdc</color>
+    <color name="activated_edittext">#6C6E6E</color>
+
+
+    <color name="medicines_image_bg_color">#d2f3a4</color>
+    <color name="health_matrics_background">#ace9f8</color>
+    <color name="checkups_background">#f9d7e4</color>
+    <color name="vaccines_background">#f3e2a4</color>
+    <color name="report_list_background">#C3C3C3</color>
+    <color name="yellow_color">#fda701</color>
+    <color name="royal_blue">#2b3ff9</color>
+    <color name="selected_none">#89c70e</color>
+    <color name="unselected_none">#e2f0bf</color>
+    <color name="selected_mild">#06c6ad</color>
+    <color name="unselected_mild">#bff8e9</color>
+    <color name="selected_moderate">#efdb00</color>
+    <color name="unselected_moderate">#fdf8b8</color>
+    <color name="selected_difficult">#f1b12b</color>
+    <color name="unselected_difficult">#fce9cb</color>
+    <color name="selected_severe">#eb5553</color>
+    <color name="unselected_severe">#fec4c3</color>
+    <color name="text_color_red">#e56a54</color>
+    <color name="azul_blue">#2f80ed</color>
+    <color name="pale_magenta">#df729c</color>
+    <color name="cool_blue">#4eabc2</color>
+    <color name="view_line">#c4c4c4</color>
+    <color name="progress_bar_color">#d1ef5b</color>
+    <color name="bg_food_recent">#868686</color>
+    <color name="dark_black">#292c2c</color>
+    <color name="milkchocolate">#5d3322</color>
+    <color name="journylooklikescreenbackground">#19A4D65E</color>
+    <color name="payment_unsucessfull_color">#eb5757</color>
+
+
+
+
+    <color name="noti_red">#e90d02</color>
+    <color name="noti_orange">#fd7e02</color>
+    <color name="noti_yellow">#fdd702</color>
+    <color name="noti_pink">#fd0296</color>
+    <color name="noti_purple">#800080</color>
+    <color name="noti_blue">#003dad</color>
+    <color name="light_grey_normal">#39cccccc</color>
+    <color name="buttonNonEditable">#00B398</color>
+    <color name="header_new">#202020</color>
+
+
+
+
+
+
+    <color name="report_image_color">#929797</color>
+    <color name="yellow">#FF9019</color>
+    <color name="premium_plan_selected">#e9fbf4</color>
+    <color name="premium_msg_red">#EE5634</color>
+    <color name="net_meds_color">#12B7C2</color>
+    <color name="coupons_list_medicine_color">#12b7c2</color>
+    <color name="coupons_list_saving_color">#76bf2d</color>
+    <color name="coupons_title_color">#929797</color>
+    <color name="no_coupons_color">#5f6262</color>
+    <color name="light_yellow">#F7E465</color>
+    <color name="extra_light_yellow">#FFFFCC</color>
+    <color name="extra_light_grey">#fcfcfc</color>
+    <color name="light_grey">#afafaf</color>
+    <color name="light_text_grey">#4f4f4f</color>
+    <color name="tab_selected_background">#4f4f4f</color>
+    <color name="bottom_line">#E5E5E5</color>
+    <color name="upcoming_test">#4f4f4f</color>
+    <color name="dark_grey_hr_line">#5f6262</color>
+    <color name="off_white">#f8f8ff</color>
+    <color name="past_records_color">#4F4F4F</color>
+    <color name="add_vital_color">#0E8D50</color>
+    <color name="text_blue">#232F53</color>
+    <color name="bottom_menu_text_green">#9900B398</color>
+    <color name="bottom_menu_item_bg">#e6fff2</color>
+
+
+    <color name="white1">#D7C5C4C4</color>
+    <color name="green">#4abc93</color>
+    <color name="kym_offer_layout">#E9FBF4</color>
+    <color name="kym_percent">#54BC93</color>
+    <color name="light_blue_gray">#dff1e8</color>
+    <color name="warm_gray">#868686</color>
+    <color name="lavender">#aaa4f3</color>
+    <color name="gray1">#C4ECE2E2</color>
+    <color name="header_sec_text">#BDBDBD</color>
+    <color name="blue">#6495ed</color>
+    <color name="background_condition">#A868C5AA</color>
+    <color name="text_hint_color">#868686</color>
+    <color name="registred_webinar_text_color">#54BC93</color>
+</resources>

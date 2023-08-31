@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "572099391780",
+    "project_id": "karmahealth-app",
+    "storage_bucket": "karmahealth-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572099391780:android:1e6e6731e5ae18e07843b1",
+        "android_client_info": {
+          "package_name": "com.devkraft.karmahealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572099391780-9icsrpdhk9e77erfs9hva1va08vrkbjf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devkraft.karmahealth",
+            "certificate_hash": "0987083e75975f45ac920919759e06674da20cb7"
+          }
+        },
+        {
+          "client_id": "572099391780-gp4iajauu5d26mssq6lmmqnid2loc4ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcnx4uix2IZ60eCB2jsIiq_8ulWPXCxFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572099391780-gp4iajauu5d26mssq6lmmqnid2loc4ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

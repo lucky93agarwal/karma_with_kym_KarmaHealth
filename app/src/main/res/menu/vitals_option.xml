@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu1"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="ट्रैक करें" />
+    <item
+        android:id="@+id/menu3"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="कॉन्फ़िगर" />
+    <item
+        android:id="@+id/menu2"
+        android:icon="@android:drawable/ic_dialog_info"
+
+        android:title="मिटाना" />
+</menu>

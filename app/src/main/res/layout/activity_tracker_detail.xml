@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_colour"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarThemeWhite">
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/containerView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="#dff1e8"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/green_blue"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="left"
+                            android:text="@string/report"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.tabs.TabLayout
+                                android:id="@+id/tabs"
+                                style="@style/TabLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:visibility="gone"
+                                app:tabGravity="fill"
+                                app:tabIndicatorHeight="3dp"
+                                app:tabMaxWidth="-5dp"
+                                app:tabMode="fixed"
+                                app:tabSelectedTextColor="#5f6262"
+                                app:tabTextAppearance="@style/TabLayoutStyle"
+                                app:tabTextColor="#c4c6c6" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/hrLine"
+                                android:visibility="gone" />
+
+                            <ScrollView
+                                android:id="@+id/scrollView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/chartDataLl"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <!--START: startDate endDate header layout-->
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:padding="10dp">
+
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:textColor="@color/black"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_weight="1"
+                                                    android:text="@string/start_date"
+                                                    android:textSize="12sp" />
+
+                                                <ImageView
+                                                    android:layout_width="20dp"
+                                                    android:layout_height="20dp"
+                                                    android:src="@drawable/ic_date_select"
+                                                    android:visibility="gone" />
+
+
+                                            </LinearLayout>
+
+                                            <View
+                                                android:layout_width="2dp"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/hrLine"
+                                                android:visibility="invisible" />
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal"
+                                                android:padding="10dp">
+
+                                                <TextView
+                                                    android:layout_width="0dp"
+                                                    android:textColor="@color/black"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_weight="1"
+                                                    android:text="@string/end_date"
+                                                    android:textSize="12sp" />
+
+                                                <ImageView
+                                                    android:layout_width="20dp"
+                                                    android:layout_height="20dp"
+                                                    android:src="@drawable/ic_date_select"
+                                                    android:visibility="invisible" />
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+                                        <!--START: startDate endDate value layout-->
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:id="@+id/startDateLl"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="10dp"
+                                                android:layout_marginEnd="15dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/startDateTv"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:textColor="@color/black"
+                                                    android:layout_weight="1"
+                                                    android:textSize="12sp" />
+
+                                                <ImageView
+                                                    android:id="@+id/selectStartDate"
+                                                    android:layout_width="20dp"
+                                                    android:layout_height="20dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:src="@drawable/drop_down_arrow" />
+
+                                            </LinearLayout>
+
+                                            <View
+                                                android:layout_width="2dp"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/hrLine"
+                                                android:visibility="invisible" />
+
+                                            <LinearLayout
+                                                android:id="@+id/endDateLl"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="10dp"
+                                                android:layout_marginEnd="15dp"
+                                                android:layout_weight="1"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/endDateTv"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="5dp"
+                                                    android:textColor="@color/black"
+                                                    android:layout_weight="1"
+                                                    android:textSize="12sp" />
+
+                                                <ImageView
+                                                    android:id="@+id/selectEndDate"
+                                                    android:layout_width="20dp"
+                                                    android:layout_height="20dp"
+                                                    android:layout_marginEnd="25dp"
+                                                    android:src="@drawable/drop_down_arrow" />
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:weightSum="2">
+
+                                            <View
+                                                android:layout_width="0dp"
+                                                android:layout_height="2dp"
+                                                android:layout_marginStart="15dp"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_marginEnd="15dp"
+                                                android:layout_weight="0.9"
+                                                android:background="@color/hrLine" />
+
+                                            <View
+                                                android:layout_width="0dp"
+                                                android:layout_height="2dp"
+                                                android:layout_marginStart="15dp"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_marginEnd="10dp"
+                                                android:layout_weight="0.9"
+                                                android:background="@color/hrLine" />
+
+                                        </LinearLayout>
+
+                                        <!-- START: chart and list view options layout -->
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <!-- START: chart and list view options layout -->
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_margin="15dp"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:id="@+id/graphView"
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:background="@drawable/image_border_selected"
+                                                    android:padding="8dp"
+                                                    android:src="@drawable/ic_report_graph_view" />
+
+                                                <ImageView
+                                                    android:id="@+id/listView"
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:background="@drawable/image_border_not_selected"
+                                                    android:padding="8dp"
+                                                    android:src="@drawable/ic_report_list_view" />
+
+
+                                            </LinearLayout>
+
+                                            <!--START: weight layout-->
+
+                                            <RelativeLayout
+                                                android:id="@+id/weightLl"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:padding="10dp"
+                                                android:visibility="gone">
+
+                                                <LinearLayout
+                                                    android:id="@+id/weightSwitchCompatLl"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentEnd="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/switchCompatFalseTv"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/lbs"
+                                                        android:textColor="@color/hint" />
+
+                                                    <androidx.appcompat.widget.SwitchCompat
+                                                        android:id="@+id/weightSwitchCompat"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentRight="true"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:checked="false"
+                                                        app:theme="@style/Color1SwitchStyleForDisease" />
+
+                                                    <TextView
+                                                        android:id="@+id/switchCompatTrueTv"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="@string/kgs"
+                                                        android:textColor="@color/hint" />
+
+                                                </LinearLayout>
+
+                                            </RelativeLayout>
+
+                                        </RelativeLayout>
+
+                                        <!--START: list view-->
+
+                                        <LinearLayout
+                                            android:id="@+id/listViewLl"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <com.devkraft.karmahealth.Utils.ExpandableHeightListView
+                                                android:id="@+id/vitalListView"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:padding="15dp" />
+                                        </LinearLayout>
+
+                                        <!--START: chart view layout-->
+
+                                        <LinearLayout
+                                            android:id="@+id/charViewLl"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <com.highsoft.highcharts.core.HIChartView
+                                                android:id="@+id/highChart"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="300dp"
+                                                android:visibility="gone" />
+
+                                            <!--START: chartDataDisplayLL layout-->
+
+                                            <LinearLayout
+                                                android:id="@+id/chartDataDisplayLL"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="15dp"
+                                                android:background="@drawable/gray_border"
+                                                android:orientation="vertical"
+                                                android:padding="3dp"
+                                                android:visibility="gone">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="horizontal">
+
+                                                    <LinearLayout
+                                                        android:id="@+id/maxHeaderLl"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_weight="1"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal"
+                                                        android:padding="10dp">
+
+                                                        <ImageView
+                                                            android:id="@+id/maxDotView"
+                                                            android:layout_width="12dp"
+                                                            android:layout_height="12dp"
+                                                            android:layout_marginTop="2dp"
+                                                            android:layout_marginRight="5dp"
+                                                            android:src="@drawable/yellow_dot" />
+
+                                                        <TextView
+                                                            android:id="@+id/maxHeader"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textStyle="bold"
+                                                            android:text="@string/systolic_text"
+                                                            android:textColor="@color/black"
+                                                            android:textSize="12sp" />
+
+                                                    </LinearLayout>
+
+                                                    <View
+                                                        android:id="@+id/line1"
+                                                        android:layout_width="2dp"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_marginTop="10dp"
+                                                        android:background="@color/hrLine" />
+
+                                                    <LinearLayout
+                                                        android:id="@+id/minHeaderLl"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_weight="1"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal"
+                                                        android:padding="10dp">
+
+                                                        <ImageView
+                                                            android:id="@+id/minDotView"
+                                                            android:layout_width="12dp"
+                                                            android:layout_height="12dp"
+                                                            android:layout_marginTop="2dp"
+                                                            android:layout_marginRight="5dp"
+                                                            android:src="@drawable/blue_dot" />
+
+                                                        <TextView
+                                                            android:id="@+id/minHeaderTv"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textStyle="bold"
+                                                            android:layout_gravity="center_vertical"
+                                                            android:text="@string/diastolic_text"
+                                                            android:textColor="@color/black"
+                                                            android:textSize="12sp" />
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                                <!--START: value layout-->
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:orientation="vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:orientation="horizontal">
+
+                                                        <LinearLayout
+                                                            android:id="@+id/maxValueLl"
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_weight="1"
+                                                            android:gravity="center"
+                                                            android:orientation="horizontal">
+
+                                                            <TextView
+                                                                android:id="@+id/maxValueTv"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:textColor="@color/yellow_color"
+                                                                android:textSize="16sp" />
+
+                                                            <TextView
+                                                                android:id="@+id/maxValueUnit"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_marginLeft="5dp"
+                                                                android:textColor="@color/black"
+                                                                android:textSize="14sp" />
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:id="@+id/minValueLl"
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_weight="1"
+                                                            android:gravity="center"
+                                                            android:orientation="horizontal">
+
+                                                            <TextView
+                                                                android:id="@+id/minValueTv"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:textColor="@color/royal_blue"
+                                                                android:textSize="16sp" />
+
+                                                            <TextView
+                                                                android:id="@+id/minValueUnit"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_marginLeft="5dp"
+                                                                android:textColor="@color/black"
+                                                                android:textSize="14sp" />
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                    <View
+                                                        android:id="@+id/line2"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_marginStart="10dp"
+                                                        android:layout_marginEnd="10dp"
+                                                        android:layout_marginTop="10dp"
+                                                        android:layout_height="1dp"
+                                                        android:background="@color/hrLine" />
+
+                                                </LinearLayout>
+
+                                                <TextView
+                                                    android:id="@+id/selectedDateTv"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_gravity="center"
+                                                    android:textColor="@color/gray"
+                                                    android:layout_margin="5dp"
+                                                    android:text="@string/start_date"
+                                                    android:textSize="12sp"
+                                                    android:visibility="visible"
+                                                    android:textStyle="bold" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/chartDataDisplayLLSingle"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerHorizontal="true"
+                                                android:layout_margin="15dp"
+                                                android:background="@drawable/gray_border"
+                                                android:orientation="vertical"
+                                                android:padding="3dp"
+                                                android:visibility="gone">
+
+                                                <!--START: value layout-->
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:orientation="vertical">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:orientation="horizontal">
+
+                                                        <LinearLayout
+                                                            android:id="@+id/maxValueLl_single"
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_weight="1"
+                                                            android:gravity="center"
+                                                            android:orientation="horizontal">
+
+                                                            <ImageView
+                                                                android:id="@+id/maxDotView_single"
+                                                                android:layout_width="12dp"
+                                                                android:layout_height="12dp"
+                                                                android:layout_marginTop="2dp"
+                                                                android:layout_marginRight="5dp"
+                                                                android:src="@drawable/yellow_dot" />
+
+                                                            <TextView
+                                                                android:id="@+id/maxValueTv_single"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:textColor="@color/yellow_color"
+                                                                android:textSize="16sp" />
+
+                                                            <TextView
+                                                                android:id="@+id/maxValueUnit_single"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_marginLeft="5dp"
+                                                                android:textColor="@color/black"
+                                                                android:textSize="14sp" />
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:id="@+id/textview_blood_glucose_parameter_measured"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:textColor="@color/yellow_color"
+                                                        android:visibility="gone"
+                                                        android:textSize="16sp" />
+
+                                                    <View
+                                                        android:id="@+id/line2_single"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_marginStart="10dp"
+                                                        android:layout_marginEnd="10dp"
+                                                        android:layout_marginTop="10dp"
+                                                        android:layout_height="1dp"
+                                                        android:background="@color/hrLine" />
+
+                                                </LinearLayout>
+
+                                                <TextView
+                                                    android:id="@+id/selectedDateTv_single"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_gravity="center"
+                                                    android:textColor="@color/gray"
+                                                    android:layout_margin="5dp"
+                                                    android:text="@string/start_date"
+                                                    android:textSize="12sp"
+                                                    android:textStyle="bold" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <!--START: empty layout-->
+
+                                    <LinearLayout
+                                        android:id="@+id/emptyView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:orientation="vertical"
+                                        android:visibility="visible">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="8dp"
+                                            android:textColor="@color/black"
+                                            android:layout_marginRight="8dp"
+                                            android:gravity="center"
+                                            android:text="@string/stay_on_top"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/trackNowBtn"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:visibility="gone"
+                                            android:text="@string/track_now"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_export_report"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:visibility="gone">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:src="@drawable/ic_report_icon_green" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:text="@string/export_report"
+                                            android:textColor="@color/green_blue"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp" />
+
+                                </LinearLayout>
+                            </ScrollView>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:background="#dff1e8"
+                    android:visibility="gone"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/green_blue"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textview_about_parameter"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            tools:ignore="WebViewLayout">
+
+                            <WebView
+                                android:id="@+id/webview_information"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:gravity="left"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#dff1e8"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_about_parameter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_info_icon" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.7">
+
+                                <TextView
+                                    android:id="@+id/about_parameter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/about_parameter"
+                                    android:textColor="#223A60"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view_about"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.2dp"
+                            android:layout_below="@id/configure"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/gray" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_configure_parameter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_configure_icon"
+                                    card_view:tint="@color/green_blue" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.7">
+
+                                <TextView
+                                    android:id="@+id/configure"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/configure"
+                                    android:textColor="#223A60"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.2dp"
+                            android:layout_below="@id/configure"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/gray" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_delete_paremeter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_delete_green_icon"
+                                    card_view:tint="@color/text_color_red" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.7">
+
+                                <TextView
+                                    android:id="@+id/delete_parameter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/delete_blood_pressure"
+                                    android:textColor="@color/text_color_red"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
