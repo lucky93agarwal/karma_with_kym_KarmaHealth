@@ -17,6 +17,7 @@ import com.devkraft.karmahealth.Model.ValidateRequest;
 import com.devkraft.karmahealth.Model.ValidateResponse;
 import com.devkraft.karmahealth.Model.VersionControllModel;
 import com.devkraft.karmahealth.R;
+import com.devkraft.karmahealth.Utils.APIUrls;
 import com.devkraft.karmahealth.retrofit.ServiceGenerator;
 import com.devkraft.karmahealth.retrofit.ServiceGeneratorTwo;
 import com.devkraft.karmahealth.retrofit.UserService;
@@ -278,7 +279,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     public void api(String mobile) {
-        Log.i("checkmodeldataCheck", "api login LoginNewResponse mobile = " + mobile);
+        Log.i("checkmodeldataCheck", "api login LoginNewResponse mobile = " + APIUrls.get().SignIn().toString());
         UserService service = ServiceGeneratorTwo.createService(UserService.class, null, null,true);
         service.genrateotp("+91" + mobile).enqueue(new Callback<LoginNewResponse>() {
             @Override

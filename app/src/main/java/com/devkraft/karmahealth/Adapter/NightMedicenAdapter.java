@@ -95,6 +95,9 @@ public class NightMedicenAdapter extends RecyclerView.Adapter<NightMedicenAdapte
 
                     menu.findItem(R.id.menu2).setVisible(false);
                 }
+                if(mProductList.get(position).url == null){
+                    menu.findItem(R.id.menu1).setVisible(false);
+                }else
                 if(mProductList.get(position).url.length() >0){
 
                     menu.findItem(R.id.menu1).setVisible(true);

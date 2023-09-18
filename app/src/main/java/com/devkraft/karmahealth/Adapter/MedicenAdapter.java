@@ -94,6 +94,9 @@ public class MedicenAdapter extends RecyclerView.Adapter<MedicenAdapter.ViewHold
 
                     menu.findItem(R.id.menu2).setVisible(false);
                 }
+                if(mProductList.get(position).url == null){
+                    menu.findItem(R.id.menu1).setVisible(false);
+                }else
                 if(mProductList.get(position).url.length() >0){
 
                     menu.findItem(R.id.menu1).setVisible(true);
