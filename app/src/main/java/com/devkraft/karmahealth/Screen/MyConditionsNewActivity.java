@@ -16,6 +16,7 @@ import com.devkraft.karmahealth.Adapter.ViewPagerAdapter;
 import com.devkraft.karmahealth.Model.AddDrugResponse;
 import com.devkraft.karmahealth.Model.DependentDto;
 import com.devkraft.karmahealth.Model.DiseaseDto;
+import com.devkraft.karmahealth.Model.GetKymUserDetailsRequest;
 import com.devkraft.karmahealth.Model.GetUserAddedSymptomsResponseDTO;
 import com.devkraft.karmahealth.Model.LoginRequest;
 import com.devkraft.karmahealth.Model.LoginResponse;
@@ -57,6 +58,7 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MyConditionsNewActivity extends AppCompatActivity {
     public static UserDto userDto;
@@ -85,11 +87,48 @@ public class MyConditionsNewActivity extends AppCompatActivity {
 //        mProgressDialogSetup.setCancelable(false);
         sharedPreferences = getSharedPreferences("userData", MODE_PRIVATE);
         edit = sharedPreferences.edit();
-        loginApi();
+        getUserKYMDetails();
         initializeIds();
         handleTabLayoutClickEvents();
         AppUtils.storeScreenName("Conditions");
         AppUtils.setTitle(this, getString(R.string.conditions));
+    }
+    public void getUserKYMDetails(){
+        GetKymUserDetailsRequest request = new GetKymUserDetailsRequest();
+        request.phone = sharedPreferences.getString("Pphone","");
+        /*  request.otp = sharedPreferences.getString("otp","");*/
+
+        Log.i("checkmodeldatalogin", "get user api LoginNewResponse token = " + String.valueOf(new Gson().toJson(request)));
+        UserService service = ServiceGeneratorTwo.createService(UserService.class, null, null,false);
+        service.getkymuserDetails(request,"Bearer " + sharedPreferences.getString("Ptoken","")).enqueue(new Callback<LoginResponse>() {
+            @Override
+            public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
+                Log.i("checkmodeldatalogin", "get user api response code = " + response.code());
+                if (response.isSuccessful()) {
+                    Log.i("checkmodeldatalogin", "get user api response body = " +new Gson().toJson(response.body()));
+                    ApplicationPreferences.get().saveStringValue(Constants.IS_NEW_USER, "true");
+                    ApplicationPreferences.get().setUserDetails(response.body());
+                    userDto = response.body().getUserDTO();
+                    generateUserList(userDto);
+
+                        AppUtils.logCleverTapEvent(MyConditionsNewActivity.this, Constants.USER_LOGGED_IN, null);
+
+
+                } else {
+                    // Toast.makeText(OTPActivity.this, "गलत OTP।", Toast.LENGTH_SHORT).show();
+                    Log.i("checkmodeldatalogin", "api response 1 code = " + response.code());
+
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<LoginResponse> call, Throwable t) {
+                Log.i("checkmodeldatalogin", "api error message response  = " + t.getMessage());
+
+            }
+        });
+
     }
     public void loginApi(){
         Log.i("Login_response", "0 = " );
