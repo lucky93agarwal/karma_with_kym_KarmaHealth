@@ -186,7 +186,7 @@ public class EveningMedicenAdapter extends RecyclerView.Adapter<EveningMedicenAd
     public void refreshToken(){
         RefreshTokenRequest request = new RefreshTokenRequest();
         request.setRefreshToken(sharedPreferences.getString("refreshToken",""));
-        Log.i("refreshToken", "refreshToken api request 278 = " + new Gson().toJson(request));
+    /*    Log.i("refreshToken", "refreshToken api request 278 = " + new Gson().toJson(request));*/
 
         UserService service = ServiceGeneratorTwo.createService(UserService.class, null, null,false);
         service.refreshToken(request).enqueue(new Callback<RefreshTokenResponse>() {

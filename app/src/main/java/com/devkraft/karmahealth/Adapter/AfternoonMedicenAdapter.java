@@ -190,15 +190,15 @@ public class AfternoonMedicenAdapter extends RecyclerView.Adapter<AfternoonMedic
     public void refreshToken(){
         RefreshTokenRequest request = new RefreshTokenRequest();
         request.setRefreshToken(sharedPreferences.getString("refreshToken",""));
-        Log.i("refreshToken", "refreshToken api request 278 = " + new Gson().toJson(request));
+    /*    Log.i("refreshToken", "refreshToken api request 278 = " + new Gson().toJson(request));*/
 
         UserService service = ServiceGeneratorTwo.createService(UserService.class, null, null,false);
         service.refreshToken(request).enqueue(new Callback<RefreshTokenResponse>() {
             @Override
             public void onResponse(Call<RefreshTokenResponse> call, retrofit2.Response<RefreshTokenResponse> response) {
-                Log.i("refreshToken", "prescription api response 0121 code = " + response.code());
+               /* Log.i("refreshToken", "prescription api response 0121 code = " + response.code());*/
                 if (response.isSuccessful()) {
-                    Log.i("refreshToken", "prescription api response = " + new Gson().toJson(response.body()));
+                  /*  Log.i("refreshToken", "prescription api response = " + new Gson().toJson(response.body()));*/
 
                     edit.putString("Ptoken", response.body().accessToken);
                     edit.apply();
@@ -214,7 +214,7 @@ public class AfternoonMedicenAdapter extends RecyclerView.Adapter<AfternoonMedic
 
             @Override
             public void onFailure(Call<RefreshTokenResponse> call, Throwable t) {
-                Log.i("checkmodeldata", "api error message response  = " + t.getMessage());
+             /*   Log.i("checkmodeldata", "api error message response  = " + t.getMessage());*/
             }
         });
 
@@ -227,8 +227,8 @@ public class AfternoonMedicenAdapter extends RecyclerView.Adapter<AfternoonMedic
         service.deleteDrugAPI(sharedPreferences.getString("kymPid", "134388"),String.valueOf(id),"AD",token).enqueue(new Callback<APIMessageResponse>() {
             @Override
             public void onResponse(Call<APIMessageResponse> call, retrofit2.Response<APIMessageResponse> response) {
-                Log.i("checkmodrug", "api login response 0 code = " + response.code());
-                Log.i("checkmodrug", "api login response  = " + new Gson().toJson(response.body()));
+              /*  Log.i("checkmodrug", "api login response 0 code = " + response.code());
+                Log.i("checkmodrug", "api login response  = " + new Gson().toJson(response.body()));*/
                 if (response.isSuccessful()) {
                     // Log.i("checkmodrug", "api login LoginNewResponse response = " + response.body().message);
                     click.onClickAdapter("checkupAdd");
@@ -243,7 +243,7 @@ public class AfternoonMedicenAdapter extends RecyclerView.Adapter<AfternoonMedic
 
             @Override
             public void onFailure(Call<APIMessageResponse> call, Throwable t) {
-                Log.i("checkmodrug", "api login response  = " + t.getMessage());
+               /* Log.i("checkmodrug", "api login response  = " + t.getMessage());*/
                 Toast.makeText(mcontext, "Please try after some time.", Toast.LENGTH_SHORT).show();
             }
         });

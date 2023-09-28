@@ -251,6 +251,7 @@ public class SignUpMobileActivity extends AppCompatActivity {
     }
     public void apidata(String serviceSid){
         Intent intent = new Intent(this, SignupOTPActivity.class);
+        edit.putString("Pphone",etMobie.getText().toString());
         intent.putExtra("mobile", etMobie.getText().toString());
         intent.putExtra("serviceSid", serviceSid);
         startActivity(intent);
